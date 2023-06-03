@@ -1,0 +1,53 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@400;500;700&display=swap');
+/* https://fonts.google.com/specimen/Poppins */
+
+:root { 
+    /* The root element is the topmost element in the style hierarchy */
+    --mainColor: #64bcf4;
+    --hoverColor: #5bacdf;
+    --backgroundColor: #f1f8fc;
+    --darkOne: #312f3a;
+    --darkTwo: #45424b;
+    --lightOne: #919191;
+    --lightTwo: #aaa;
+}
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;   
+  /* full pixel width including borders and padding */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* "sans-serif" if such font is not found or not available */
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.big-wrapper {
+   padding: 1.7rem 0 2rem;
+   width: 100%;
+   min-height: 100vh;
+   overflow: hidden;
+   background-color: var(--backgroundColor); 
+   /* The variable --backgroundColor is defined in the root CSS selector */
+}
+
+.container {
+    background-color: red;
+    max-width: 81rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 40px;
+}

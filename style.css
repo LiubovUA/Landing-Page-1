@@ -166,7 +166,19 @@ header .container {
     line-height: 39px;
 }
 
-.toggle-btn i:last-child {
+.big-wrapper.light .toggle-btn i:last-child {
+    display: none;
+}
+
+.big-wrapper.light .toggle-btn i:first-child {
+    display: block;
+}
+
+.big-wrapper.dark .toggle-btn i:last-child {
+    display: block;
+}
+
+.big-wrapper.dark .toggle-btn i:first-child {
     display: none;
 }
 

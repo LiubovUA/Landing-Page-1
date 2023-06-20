@@ -1,7 +1,3 @@
-// Select The Elements
-
-// var toggle_btn = document.querySelector(".toggle-btn");
-// var big_wrapper = document.querySelector(".big-wrapper");
 var toggle_btn;
 var big_wrapper;
 var hamburger_menu;
@@ -19,9 +15,7 @@ declare();
 let dark = false;
 
 function toggleAnimation() {
-    //clone the wrapper
     dark = !dark;
-    // console.log(dark);
     let clone = big_wrapper.cloneNode(true);
     if (dark) {
         clone.classList.remove("light");
@@ -37,7 +31,6 @@ function toggleAnimation() {
 
     clone.addEventListener("animationend", () => {
         document.body.classList.remove("stop-scrolling");
-        // console.log("heloo");
         big_wrapper.remove();
         clone.classList.remove("copy");
         declare();
